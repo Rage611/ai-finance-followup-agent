@@ -1,0 +1,6 @@
+invoice_no,client_name,amount,due_date,contact_email,follow_up_count
+INV-2026-001,Acme Corp,45000,2026-05-04,billing@acmecorp.mock,0
+INV-2026-002,Global Tech,12500,2026-04-27,finance@globaltech.mock,1
+INV-2026-003,Stark Industries,89000,2026-04-20,accounts@stark.mock,2
+INV-2026-004,Wayne Enterprises,250000,2026-04-12,payables@wayne.mock,3
+INV-2026-005,Cyberdyne Systems,5600,2026-03-15,admin@cyberdyne.mock,4
