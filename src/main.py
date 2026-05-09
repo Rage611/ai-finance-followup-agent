@@ -9,17 +9,13 @@ from email_service  import setup_database, log_interaction
 from llm_engine     import generate_follow_up_email, InvoiceContext
 
 
-# ---------------------------------------------------------------------------
 # Configuration
-# ---------------------------------------------------------------------------
 
 INVOICES_FILE        = "data/pending_invoices.csv"
 LEGAL_ESCALATION_TAG = "ESCALATION — Flag for Legal"
 
 
-# ---------------------------------------------------------------------------
 # Routing Logic
-# ---------------------------------------------------------------------------
 
 def process_invoice(invoice):
     """
@@ -52,9 +48,7 @@ def process_invoice(invoice):
     log_interaction(invoice, email_body=email_body, status="Simulated Send")
 
 
-# ---------------------------------------------------------------------------
 # Entry Point
-# ---------------------------------------------------------------------------
 
 def main():
     print(f"\n{'='*64}")
