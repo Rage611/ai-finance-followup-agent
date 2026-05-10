@@ -3,17 +3,13 @@ import sqlite3
 from datetime import datetime
 
 
-# ---------------------------------------------------------------------------
 # Configuration
-# ---------------------------------------------------------------------------
 
 LOGS_DIRECTORY  = "logs"
 DATABASE_PATH   = os.path.join(LOGS_DIRECTORY, "audit_trail.db")
 
 
-# ---------------------------------------------------------------------------
 # Database Setup
-# ---------------------------------------------------------------------------
 
 def setup_database():
     """
@@ -43,9 +39,7 @@ def setup_database():
     print(f"  [Database] Audit trail ready at: {DATABASE_PATH}")
 
 
-# ---------------------------------------------------------------------------
 # Audit Logging
-# ---------------------------------------------------------------------------
 
 def log_interaction(invoice, email_body, status):
     """
